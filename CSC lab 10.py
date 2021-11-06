@@ -39,9 +39,6 @@ sales_data.append(City)
 sales_data.append(State)
 sales_data.append(Country)
 
-json_string = json.dumps(sales_data)
-print(json_string)
-with open('data.json', 'w') as jsonfile:
-    json_string
-
+with open('transaction_data.json', 'w') as jsonfile:
+    json.dump(sales_data, jsonfile)
     
